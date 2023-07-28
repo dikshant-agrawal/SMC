@@ -1,3 +1,11 @@
 #box{
     margin: 10px;
 }
+
+#table{
+ background-color: rgb(205, 239, 174);
+ text-align: center;
+ font-size: 25px;
+ margin: 10px;
+ padding: 10px;
+}
