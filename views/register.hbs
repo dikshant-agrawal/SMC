@@ -5,30 +5,38 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
-	<link rel="stylesheet" href="../public/style.css">
+	<link rel="stylesheet" href="/static/style.css">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 
 <body>
-	<!-- <a href="index.php">Home</a> | <a href="view.php">Back to Dashboard</a> | <a href="logout.php">Logout</a>
-	<br /><br /> -->
-
 	<form action="http://localhost:8080/LOGIN/register.php" method="post" name="form1">
-		<div id="box">
+		<div class="box">
 			Full Name: <input type="text" name="name">
 		</div>
-		<div id="box">
+		<div class="box">
 			Email Id: <input type="email" name="email">
 		</div>
-		<div id="box">
+		<div class="box">
 			Username: <input type="text" name="username">
 		</div>
-		<div id="box">
+		<div class="box">
 			Password: <input type="password" name="password">
 		</div>
 		<div>
-			<input type="submit" name="Submit">
+			<input type="submit" name="Submit" id="submit">
 		</div>
 	</form>
+	{{!-- <div><button id="login">LOGIN</button></div>
+	<script>
+		$(document).ready(function () {
+			// Attach a click event handler to the button
+			$("#login").on("click", function () {
+				// Navigate to the desired page
+				window.location.href = "./login";
+			});
+		});
+	</script> --}}
 </body>
 
 </html>
